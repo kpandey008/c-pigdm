@@ -24,8 +24,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>Conditional Conjugate Integrators</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link rel="stylesheet" href="static/css/bootstrap.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/juxtapose.css">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -35,14 +37,8 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
+  <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
 
@@ -52,20 +48,22 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            
+            <h1 class="title is-1 publication-title">Fast Samplers for Inverse Problems
+              in Iterative Refinement Models</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://kpandey008.github.io/" target="_blank">Kushagra Pandey</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://buggyyang.github.io/" target="_blank">Ruihan Yang</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://www.stephanmandt.com/" target="_blank">Stephan Mandt</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
+                    <span class="author-block">University of California, Irvine<br>NeurIPS'24</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
 
@@ -73,7 +71,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2405.17673" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,20 +80,9 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/mandt-lab/c-pigdm" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,7 +93,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2405.17673" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -122,13 +109,47 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+            <img src="static/images/ILSVRC2012_val_00000989_deg.png" data-label="Degraded"/>
+            <img src="static/images/ILSVRC2012_val_00000989.png" data-label="Restored"/>
+          </div>
+          <br>
+          <span class="is-size-5">4x Super-Resolution</span>
+        </div>
+        <div class="column has-text-centered">
+          <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+            <img src="static/images/sample_y_920.png" data-label="Degraded"/>
+            <img src="static/images/sample_920.png" data-label="Restored"/>
+          </div>
+          <br>
+          <span class="is-size-5">Gaussian Deblur</span>
+        </div>
+        <div class="column has-text-centered">
+          <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+            <img src="static/images/degrad_pinv_3_2_inp_afhq.png" data-label="Degraded"/>
+            <img src="static/images/conj_3_2_inp_afhq.png" data-label="Restored"/>
+          </div>
+          <br>
+          <span class="is-size-5">Inpainting</span>
+          </div>
+        </div>
+        <div class="has-text-centered"><span class="is-size-5"><strong>Number of Function Evaluations: 5</strong></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
         type="video/mp4">
       </video>
@@ -137,18 +158,34 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
+
+<!-- TLDR -->
+<section class="section hero" style="background-color: #f7f1fc;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">TLDR</h2>
+        <div class="content has-text-justified">
+          <p>
+            We develop a <strong>plug-and-play</strong> method for accelerating sampling in posterior approximation methods like \(\Pi\)-GDM and DPS for solving inverse problems using pre-trained diffusion models. Our approach can generate much better samples in around <strong>5 NFEs</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3">Full Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Constructing fast samplers for unconditional diffusion and flow-matching models has received much attention recently; however, existing methods for solving <strong>inverse problems</strong>, such as super-resolution, inpainting, or deblurring, still require hundreds to thousands of iterative steps to obtain high-quality results. We propose a plug-and-play framework for constructing efficient samplers for inverse problems, requiring only pre-trained diffusion or flow-matching models. We present <strong>Conditional Conjugate Integrators</strong>, which leverage the specific form of the inverse problem to project the respective conditional diffusion/flow dynamics into a more amenable space for sampling. Our method complements popular posterior approximation methods for solving inverse problems using diffusion/flow models. We evaluate the proposed method's performance on various linear image restoration tasks across multiple datasets, employing diffusion and flow-matching models. Notably, on challenging inverse problems like 4\(\times\) super-resolution on the ImageNet dataset, our method can generate high-quality samples in as few as <strong>5</strong> conditional sampling steps and outperforms competing baselines requiring 20-1000 steps.
           </p>
         </div>
       </div>
@@ -157,35 +194,232 @@
 </section>
 <!-- End paper abstract -->
 
+<!-- Methodology Figure-->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="column has-text-centered">
+      <h2 class="title is-3">Methodology</h2>
+    </div>
+    <div class="column">
+      <img src="static/images/method_gif.gif" style="height: auto; width: auto;"/>
+    </div>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            An overview of our Conditional Conjugate Integrators is illustrated in the above figure. Our proposed approach projects the 
+            conditional diffusion dynamics to an amenable space where sampling is more fast. On completion, the dynamics are reversed back to the
+            original space. The only constraint is to formulate the mapping \(\Phi\) to be reversible. In this work our mapping \(\Phi\) and its inverse
+            depend on the degradation operator \(H\) and the guidance scale \(w\) (see our paper for more details).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Methodology Figure-->
+
+<!-- Extra Qualitative Results -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Additional Qualitative Results</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hero"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-slider1-tab" data-bs-toggle="pill" data-bs-target="#pills-slider1" type="button" role="tab" aria-controls="pills-slider1" aria-selected="true">4x Superres</button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-slider2-tab" data-bs-toggle="pill" data-bs-target="#pills-slider2" type="button" role="tab" aria-controls="pills-slider2" aria-selected="false">Inpainting</button>
+          </li>
+          <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-slider3-tab" data-bs-toggle="pill" data-bs-target="#pills-slider3" type="button" role="tab" aria-controls="pills-slider3" aria-selected="false">Gauss. Deblur</button>
+          </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="hero"></section>
+  <div class="container is-max-desktop">
+    <div class="hero-body tab-content" id="pills-tabContent">
+      <!-- Superres compare -->
+      <div class="columns is-centered tab-pane fade show active" id="pills-slider1" role="tabpanel" aria-labelledby="pills-slider1-tab">
+        <div class="column has-text-centered">
+          <div><img src="static/images/sr_compare/orig_2.png"/></div>
+          <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+            <img src="static/images/sr_compare/sr1_p.png" data-label="Baseline"/>
+            <img src="static/images/sr_compare/sr1_cp.png" data-label="Ours"/>
+          </div>
+        </div>
+        <div class="column has-text-centered">
+          <img src="static/images/sr_compare/orig_1.png"/>
+          <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+            <img src="static/images/sr_compare/sr2_p.png" data-label="Baseline"/>
+            <img src="static/images/sr_compare/sr2_cp.png" data-label="Ours"/>
+          </div>
+        </div>
+        <div class="column has-text-centered">
+          <img src="static/images/sr_compare/orig_3.png"/>
+          <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+            <img src="static/images/sr_compare/sr3_p.png" data-label="Baseline"/>
+            <img src="static/images/sr_compare/sr3_cp.png" data-label="Ours"/>
+          </div>
+          </div>
+        <div class="column has-text-centered">
+          <img src="static/images/sr_compare/orig_4.png"/>
+          <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+            <img src="static/images/sr_compare/sr4_p.png" data-label="Baseline"/>
+            <img src="static/images/sr_compare/sr4_cp.png" data-label="Ours"/>
+          </div>
+          </div>
+        </div>
+        <!-- Inpainting compare -->
+        <div class="columns is-centered tab-pane fade d-none" id="pills-slider2" role="tabpanel" aria-labelledby="pills-slider2-tab">
+          <div class="column has-text-centered">
+            <div><img src="static/images/inp_compare/origin_3_2_afhq.png"/></div>
+            <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+              <img src="static/images/inp_compare/pgdm_3_2_inp_afhq.png" data-label="Baseline"/>
+              <img src="static/images/inp_compare/conj_3_2_inp_afhq.png" data-label="Ours"/>
+            </div>
+          </div>
+          <div class="column has-text-centered">
+            <img src="static/images/sr_compare/orig_1.png"/>
+            <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+              <img src="static/images/sr_compare/sr2_p.png" data-label="Baseline"/>
+              <img src="static/images/sr_compare/sr2_cp.png" data-label="Ours"/>
+            </div>
+          </div>
+          <div class="column has-text-centered">
+            <img src="static/images/sr_compare/orig_3.png"/>
+            <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+              <img src="static/images/sr_compare/sr3_p.png" data-label="Baseline"/>
+              <img src="static/images/sr_compare/sr3_cp.png" data-label="Ours"/>
+            </div>
+            </div>
+          <div class="column has-text-centered">
+            <img src="static/images/sr_compare/orig_4.png"/>
+            <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+              <img src="static/images/sr_compare/sr4_p.png" data-label="Baseline"/>
+              <img src="static/images/sr_compare/sr4_cp.png" data-label="Ours"/>
+            </div>
+            </div>
+          </div>
+          <!-- Gauss Deblur compare -->
+          <div class="columns is-centered tab-pane fade d-none" id="pills-slider3" role="tabpanel" aria-labelledby="pills-slider3-tab">
+            <div class="column has-text-centered">
+              <div><img src="static/images/denoise_compare/ILSVRC2012_val_00000028_ori.png"/></div>
+              <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+                <img src="static/images/denoise_compare/ILSVRC2012_val_00000028_pigdm.png" data-label="Baseline"/>
+                <img src="static/images/denoise_compare/ILSVRC2012_val_00000028_cpigdm.png" data-label="Ours"/>
+              </div>
+            </div>
+            <div class="column has-text-centered">
+              <img src="static/images/denoise_compare/ILSVRC2012_val_00000198_ori.png"/>
+              <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+                <img src="static/images/denoise_compare/ILSVRC2012_val_00000198_pigdm.png" data-label="Baseline"/>
+                <img src="static/images/denoise_compare/ILSVRC2012_val_00000198_cpigdm.png.png" data-label="Ours"/>
+              </div>
+            </div>
+            <div class="column has-text-centered">
+              <img src="static/images/denoise_compare/ILSVRC2012_val_00000632_ori.png"/>
+              <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+                <img src="static/images/denoise_compare/ILSVRC2012_val_00000632_pigdm.png" data-label="Baseline"/>
+                <img src="static/images/denoise_compare/ILSVRC2012_val_00000632_cpigdm.png" data-label="Ours"/>
+              </div>
+              </div>
+            <div class="column has-text-centered">
+              <img src="static/images/denoise_compare/ILSVRC2012_val_00000890_ori.png"/>
+              <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+                <img src="static/images/denoise_compare/ILSVRC2012_val_00000890_pigdm.png" data-label="Baseline"/>
+                <img src="static/images/denoise_compare/ILSVRC2012_val_00000890_cpigdm.png" data-label="Ours"/>
+              </div>
+              </div>
+            </div>
+      </div>
+        <div class="has-text-centered"><span class="is-size-5"><strong>Conjugate-\(\Pi\)GDM (Ours) vs \(\Pi\)GDM (Baseline) <br>(Top Row: Ground Truth samples, <strong>NFE=5</strong>)</strong></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End -->
+
+<!-- Noisy Super-resolution results -->
+<section class="hero">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <img src="static/images/noisy_compare/nsr1_orig.png"/>
+          <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+            <img src="static/images/noisy_compare/nsr1_pi.png" data-label="Baseline"/>
+            <img src="static/images/noisy_compare/nsr1_cp.png" data-label="Ours"/>
+          </div>
+        </div>
+        <div class="column has-text-centered">
+          <img src="static/images/noisy_compare/nsr2_orig.png"/>
+          <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+            <img src="static/images/noisy_compare/nsr2_pi.png" data-label="Baseline"/>
+            <img src="static/images/noisy_compare/nsr2_cp.png" data-label="Ours"/>
+          </div>
+        </div>
+        <div class="column has-text-centered">
+          <img src="static/images/noisy_compare/nsr3_orig.png"/>
+          <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+            <img src="static/images/noisy_compare/nsr3_pi.png" data-label="Baseline"/>
+            <img src="static/images/noisy_compare/nsr3_cp.png" data-label="Ours"/>
+          </div>
+          </div>
+          <div class="column has-text-centered">
+            <img src="static/images/noisy_compare/nsr4_orig.png"/>
+            <div class="juxtapose" data-startingposition="50%" data-animate="true" style="height: 256px;width: 256px" show-credits="false">
+              <img src="static/images/noisy_compare/nsr4_pi.png" data-label="Baseline"/>
+              <img src="static/images/noisy_compare/nsr4_cp.png" data-label="Ours"/>
+            </div>
+            </div>
+        </div>
+        <div class="has-text-centered"><span class="is-size-5"><strong>Conjugate-\(\Pi\)GDM (Ours) vs Pseudoinverse (Baseline) for Noisy 4x super-res <br>(\(\sigma_y=0.05\), NFE=5, Top Row: Ground Truth samples)</strong></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           First image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           Second image description.
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
          Third image description.
        </h2>
      </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         Fourth image description.
@@ -194,56 +428,50 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <!-- Paper video. -->
       <h2 class="title is-3">Video Presentation</h2>
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           
           <div class="publication-video">
-            <!-- Youtube embed code here -->
             <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-<!-- End youtube video -->
+</section> -->
 
 
 <!-- Video carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -251,7 +479,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End video carousel -->
 
 
@@ -260,7 +488,7 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
@@ -270,7 +498,7 @@
         
       </div>
     </div>
-  </section>
+  </section> -->
 <!--End paper poster -->
 
 
@@ -278,7 +506,15 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@misc{pandey2024fastsamplersinverseproblems,
+        title={Fast Samplers for Inverse Problems in Iterative Refinement Models}, 
+        author={Kushagra Pandey and Ruihan Yang and Stephan Mandt},
+        year={2024},
+        eprint={2405.17673},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2405.17673}, 
+  }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -292,8 +528,6 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
         </div>
@@ -301,6 +535,35 @@
     </div>
   </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="static/js/juxtapose.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script>
+    document.addEventListener('shown.bs.tab', function (event) {
+        // Remove the 'd-none' class from the active slider and add it to the inactive sliders
+        let activeTab = event.target.getAttribute('data-bs-target'); // Get active tab ID
+        let allTabs = document.querySelectorAll('.tab-pane'); // Get all tab content panes
+
+        allTabs.forEach(tab => {
+            if (tab.id === activeTab.substring(1)) {
+                tab.classList.remove('d-none'); // Show the active tab pane
+                tab.classList.add('show', 'active'); // Ensure proper display
+            } else {
+                tab.classList.add('d-none'); // Hide inactive tabs
+                tab.classList.remove('show', 'active'); // Remove Bootstrap 'show' class
+            }
+        });
+    });
+</script>
 
 <!-- Statcounter tracking code -->
   
